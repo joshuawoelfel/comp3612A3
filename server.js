@@ -15,7 +15,7 @@ router.handleAllGalleries(app);
 router.handleGalleryByCountry(app);
 
 
-let port = 8080;
+let port = process.env.PORT || 8080;
 app.listen(port, () => {
     console.log("Server running at port = " + port);
 });
